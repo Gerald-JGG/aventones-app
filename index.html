@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aventones - Home</title>
   </head>
-
   <body>
     <header>
       <h1>AVENTONES</h1>
@@ -24,12 +23,42 @@
     </header>
 
     <main>
-      <section id="my-rides">
-        <h2>My Rides</h2>
-        <button type="button">New Ride</button>
+      <section id="search-rides">
+        <h2>Search Rides</h2>
+        <form>
+          <label for="from">From</label>
+          <select id="from" name="from">
+            <option>Quesada</option>
+            <option>Heredia</option>
+            <option>San José</option>
+          </select>
+
+          <label for="to">To</label>
+          <select id="to" name="to">
+            <option>Zarcero</option>
+            <option>Cartago</option>
+            <option>Alajuela</option>
+          </select>
+
+          <button type="submit">Find rides</button>
+
+          <div class="days">
+            <span>Days</span>
+            <label><input type="checkbox" /> Mon</label>
+            <label><input type="checkbox" /> Tue</label>
+            <label><input type="checkbox" /> Wed</label>
+            <label><input type="checkbox" /> Thu</label>
+            <label><input type="checkbox" /> Fri</label>
+            <label><input type="checkbox" /> Sat</label>
+            <label><input type="checkbox" /> Sun</label>
+          </div>
+        </form>
+
+        <h4>Rides Found from Quesada to Zarcero</h4>
         <table>
           <thead>
             <tr>
+              <th>Driver</th>
               <th>From</th>
               <th>To</th>
               <th>Seats</th>
@@ -38,42 +67,33 @@
               <th>Actions</th>
             </tr>
           </thead>
-
           <tbody>
             <tr>
+              <td>Gerald</td>
               <td>Quesada</td>
               <td>Alajuela</td>
               <td>2</td>
               <td>Nissan Pathfinder 2015</td>
               <td>$5</td>
-              <td>
-                <button type="button">Edit</button>
-                <button type="button">Delete</button>
-              </td>
+              <td><button type="button">Request</button></td>
             </tr>
-
             <tr>
+              <td>Maria</td>
               <td>Quesada</td>
               <td>Naranjo</td>
               <td>1</td>
               <td>Toyota Corolla 2020</td>
               <td>$10</td>
-              <td>
-                <button type="button">Edit</button>
-                <button type="button">Delete</button>
-              </td>
+              <td><button type="button">Request</button></td>
             </tr>
-            
             <tr>
+              <td>Juan</td>
               <td>Aguas Zarcas</td>
               <td>Naranjo</td>
               <td>1</td>
               <td>Ford Festiva 1990</td>
               <td>--</td>
-              <td>
-                <button type="button">Edit</button>
-                <button type="button">Delete</button>
-              </td>
+              <td><button type="button">Request</button></td>
             </tr>
           </tbody>
         </table>
