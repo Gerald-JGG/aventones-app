@@ -1,60 +1,104 @@
 /* ===== Header ===== */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: #fff;
-  padding: 20px 50px;
-  border-bottom: 1px solid var(--gray);
+  font-family: Arial, sans-serif;
+  position: relative;
+  max-width: 85%;
+  margin: 0 auto;
 }
 
-header h1 {
-  font-size: 28px;
-  font-weight: bold;
+header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #eeeeee;
 }
 
-header nav ul {
+.top-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 24px;
+  letter-spacing: 5px;
+  gap: 19px;
+}
+
+.top-header img {
+  transform: translateY(-5px);
+}
+
+.logo-header {
+  width: 53px;
+  height: 53px;
+}
+
+.bottom-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  height: 62px;
+  background-color: #f8f8f8;
+}
+
+header .bottom-header nav ul {
   display: flex;
   list-style: none;
-  gap: 20px;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
-header nav ul li a {
+header .bottom-header nav ul li {
+  height: 100%;
+}
+
+header .bottom-header nav ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 44px;
   text-decoration: none;
-  color: var(--text-color);
+  color: #898989;
   font-weight: 500;
-  padding: 8px 12px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-header nav ul li a:hover,
-header nav ul li a.active {
+header .bottom-header nav ul li a:hover {
   background-color: var(--secondary-color);
   color: white;
-  border-radius: 5px;
 }
 
-.search-bar {
+.search-user {
   display: flex;
-  gap: 10px;
+  align-items: center;
+  gap: 37px;
+  margin-left: auto;
 }
 
 .search-bar input {
   padding: 8px;
-  border: 1px solid var(--gray);
-  border-radius: 4px;
+  border: 2px solid #e6e6e6;
+  border-radius: 6px;
+  width: 250px;
+  margin-left: -300px;
 }
 
-.search-bar button {
-  padding: 8px 12px;
-  background-color: var(--primary-color);
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+.search-bar input::placeholder {
+  font-size: 15px;   
+  padding-left: 13px;  
 }
 
-.search-bar button:hover {
-  background-color: var(--primary-dark);
+.user-icon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px;
+  transform: translateX(-10px);
 }
 
 /* ===== Footer ===== */

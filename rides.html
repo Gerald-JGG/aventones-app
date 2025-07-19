@@ -5,22 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aventones - Rides</title>
     <link rel="stylesheet" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <header>
-      <h1>AVENTONES</h1>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#rides">Rides</a></li>
-          <li><a href="#bookings">Bookings</a></li>
-        </ul>
-      </nav>
+      <div class="top-header">
+        <img src="assets/img/car-icon.png" alt="Logo" class="logo-header" />
+        <h1>AVENTONES</h1>
+      </div>  
 
-      <div class="search-bar">
-        <input type="text" placeholder="Search..." />
-        <button type="submit">Search</button>
+      <div class="bottom-header">
+        <nav>
+          <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#rides">Rides</a></li>
+            <li><a href="#bookings">Bookings</a></li>
+          </ul>
+        </nav>
+
+        <div class="search-user">
+          <div class="search-bar">
+            <input type="text" placeholder="Search..." />
+          </div>
+          <div class="user-icon">
+            <img src="assets/img/user-icon.png" alt="User" />
+          </div>
+        </div>
       </div>
     </header>
 
