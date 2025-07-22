@@ -5,113 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aventones - Register</title>
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/pages/register.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <header>
-      <h1>AVENTONES</h1>
+      <div class="top-header">
+        <img src="assets/img/car-icon.png" alt="Logo" class="logo-header" />
+        <h1>AVENTONES</h1>
+      </div>
     </header>
 
     <main>
       <h2>User Registration</h2>
-      <form id="registerForm">
-        <label for="first">First Name:</label>
-        <input
-          type="text"
-          id="first"
-          placeholder="Enter your first name"
-          required
-        /><br />
+      <div class="reg-wrapper">
+        <div class="reg-container">
+          <form class="reg-form">
+            <div class="reg-row">
+              <div class="reg-group">
+                <label class="reg-label">First Name</label>
+                <input type="text" class="reg-input" required />
+              </div>
+              <div class="reg-group">
+                <label class="reg-label">Last Name</label>
+                <input type="text" class="reg-input" required />
+              </div>
+            </div>
 
-        <label for="last">Last Name:</label>
-        <input
-          type="text"
-          id="last"
-          placeholder="Enter your last name"
-          required
-        /><br />
+            <div class="reg-group">
+              <label class="reg-label">Email</label>
+              <input type="email" class="reg-input" required />
+            </div>
 
-        <label for="email">Email:</label>
-        <input
-          type="email"
-          id="email"
-          placeholder="Enter your email"
-          required
-        /><br />
+            <div class="reg-row">
+              <div class="reg-group">
+                <label class="reg-label">Password</label>
+                <input type="password" class="reg-input" required />
+              </div>
+              <div class="reg-group">
+                <label class="reg-label">Repeat Password</label>
+                <input type="password" class="reg-input" required />
+              </div>
+            </div>
 
-        <label for="password">Password:</label>
-        <input
-          type="password"
-          id="password"
-          placeholder="Enter your password"
-          required
-        /><br />
+            <div class="reg-group">
+              <label class="reg-label">Address</label>
+              <input type="text" class="reg-input" required />
+            </div>
 
-        <label for="confirmPassword">Confirm Password:</label>
-        <input
-          type="password"
-          id="confirmPassword"
-          placeholder="Confirm your password"
-          required
-        /><br />
+            <div class="reg-row">
+              <div class="reg-group">
+                <label class="reg-label">Country</label>
+                <select class="reg-input" required>
+                  <option value="">Select</option>
+                  <option value="CR">Costa Rica</option>
+                  <option value="US">USA</option>
+                </select>
+              </div>
+              <div class="reg-group">
+                <label class="reg-label">State</label>
+                <input type="text" class="reg-input" required />
+              </div>
+            </div>
 
-        <label for="address">Address:</label>
-        <input
-          type="text"
-          id="address"
-          placeholder="Enter your address"
-          required
-        /><br />
+            <div class="reg-row">
+              <div class="reg-group">
+                <label class="reg-label">City</label>
+                <input type="text" class="reg-input" required />
+              </div>
+              <div class="reg-group">
+                <label class="reg-label">Phone Number</label>
+                <input type="tel" class="reg-input" required />
+              </div>
+            </div>
 
-        <label for="country">Country:</label>
-        <input
-          type="text"
-          id="country"
-          placeholder="Enter your country"
-          required
-        /><br />
+            <div class="reg-links">
+              <span
+                >Already an user?
+                <a href="#" class="reg-link">Login here</a></span
+              >
+              <span
+                >Register as driver?
+                <a href="#" class="reg-link">Click here</a></span
+              >
+            </div>
 
-        <label for="state">State:</label>
-        <input
-          type="text"
-          id="state"
-          placeholder="Enter your state"
-          required
-        /><br />
-
-        <label for="city">City:</label>
-        <input
-          type="text"
-          id="city"
-          placeholder="Enter your city"
-          required
-        /><br />
-
-        <label for="phone">Phone:</label>
-        <input
-          type="tel"
-          id="phone"
-          placeholder="Enter your phone number"
-          required
-        /><br />
-      </form>
-      <p>Already an user? <a href="login.html">Login Here</a></p>
-      <p>Register as driver? <a href="driver_register.html">Click Here</a></p>
-      <button type="submit">Sign Up</button>
+            <button type="submit" class="reg-button">Sign up</button>
+          </form>
+        </div>
+      </div>
     </main>
 
     <footer>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#rides">Rides</a></li>
-        <li><a href="#bookings">Bookings</a></li>
-        <li><a href="#settings">Settings</a></li>
-        <li><a href="#login">Login</a></li>
-        <li><a href="#register">Register</a></li>
-      </ul>
-    </nav>
-    <p>&copy; Aventones.com</p>
-  </footer>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#rides">Rides</a></li>
+          <li><a href="#bookings">Bookings</a></li>
+          <li><a href="#settings">Settings</a></li>
+          <li><a href="#login">Login</a></li>
+          <li><a href="#register">Register</a></li>
+        </ul>
+      </nav>
+      <p>
+        <img
+          src="assets/img/copyright-icon.png"
+          alt="copy-logo"
+          width="14"
+          style="margin-right: 10px"
+        />Aventones.com
+      </p>
+    </footer>
   </body>
 </html>
