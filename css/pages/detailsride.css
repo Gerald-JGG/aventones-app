@@ -30,7 +30,7 @@
 .ride-form {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 38px;
 }
 
 .ride-row-title {
@@ -47,7 +47,7 @@
 }
 
 .ride-value {
-  font-size: 18px;
+  font-size: 25px;
   color: #444;
   font-weight: 300;
   text-align: center;
@@ -86,7 +86,7 @@
 .ride-fieldset {
   border: 1px solid #ccc;
   border-radius: 4px;
-  padding: 10px;
+  padding: 30px;
 }
 
 .ride-fieldset legend {
