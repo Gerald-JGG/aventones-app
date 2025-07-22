@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aventones - Bookings</title>
     <link rel="stylesheet" href="css/main.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/pages/bookings.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -42,24 +43,30 @@
             <tr>
               <th>User</th>
               <th>Ride</th>
-              <th>Accept/Reject</th>
+              <th>Accept / Reject</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Fulano</td>
+              <td class="driver">
+                <img src="assets/img/user-icon.png" alt="">
+                Fulano
+              </td>
               <td>Ciudad Quesada - Naranjo</td>
               <td>
-                <button type="button">Accept</button>
-                <button type="button">Reject</button>
+                <a class="button-bookings">Accept |</a>
+                <a class="button-bookings">Reject</a>
               </td>
             </tr>
             <tr>
-              <td>Luna</td>
+              <td class="driver">
+                <img src="assets/img/user-icon.png" alt="">
+                Luna
+              </td>
               <td>Fortuna - San Jose</td>
               <td>
-                <button type="button">Accept</button>
-                <button type="button">Reject</button>
+                <a class="button-bookings">Accept |</a>
+                <a class="button-bookings">Reject</a>
               </td>
             </tr>
           </tbody>
