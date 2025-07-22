@@ -103,11 +103,11 @@ header .bottom-header nav ul li a:hover {
 
 /* ===== Footer ===== */
 footer {
+  border-top: 1px solid #e6e6e6;
   font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
   font-weight: 100;
   text-align: center;
   padding: 30px;
-  background-color: #f9f9f9;
   margin-top: 50px;
   font-size: 15px;
   color: #666;
