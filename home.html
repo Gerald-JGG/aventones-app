@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aventones - Home</title>
     <link rel="stylesheet" href="css/main.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/pages/home.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <div class="top-header">
         <img src="assets/img/car-icon.png" alt="Logo" class="logo-header" />
         <h1>AVENTONES</h1>
-      </div>  
+      </div>
 
       <div class="bottom-header">
         <nav>
@@ -35,81 +39,101 @@
     </header>
 
     <main>
-      <section id="search-rides">
-        <h2>Search Rides</h2>
-        <form>
-          <label for="from">From</label>
-          <select id="from" name="from">
+      <h2>Search rides</h2>
+      <div class="search-box">
+        <label
+          >From
+          <select>
             <option>Quesada</option>
-            <option>Heredia</option>
-            <option>San José</option>
+            <option>Aguas Zarcas</option>
           </select>
+        </label>
 
-          <label for="to">To</label>
-          <select id="to" name="to">
+        <label
+          >To
+          <select>
             <option>Zarcero</option>
-            <option>Cartago</option>
-            <option>Alajuela</option>
+            <option>Naranjo</option>
           </select>
+        </label>
 
-          <button type="submit">Find rides</button>
+        <br />
+        Days:
+        <label><input type="checkbox" /> Mon</label>
+        <label><input type="checkbox" /> Tue</label>
+        <label><input type="checkbox" /> Wed</label>
+        <label><input type="checkbox" /> Thu</label>
+        <label><input type="checkbox" /> Fri</label>
+        <label><input type="checkbox" /> Sat</label>
+        <label><input type="checkbox" /> Sun</label>
 
-          <div class="days">
-            <span>Days</span>
-            <label><input type="checkbox" /> Mon</label>
-            <label><input type="checkbox" /> Tue</label>
-            <label><input type="checkbox" /> Wed</label>
-            <label><input type="checkbox" /> Thu</label>
-            <label><input type="checkbox" /> Fri</label>
-            <label><input type="checkbox" /> Sat</label>
-            <label><input type="checkbox" /> Sun</label>
-          </div>
-        </form>
+        <button>Find rides</button>
+      </div>
 
-        <h4>Rides Found from Quesada to Zarcero</h4>
-        <table>
-          <thead>
-            <tr>
-              <th>Driver</th>
-              <th>From</th>
-              <th>To</th>
-              <th>Seats</th>
-              <th>Car</th>
-              <th>Fee</th>
-              <th>Actions</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Gerald</td>
-              <td>Quesada</td>
-              <td>Alajuela</td>
-              <td>2</td>
-              <td>Nissan Pathfinder 2015</td>
-              <td>$5</td>
-              <td><button type="button">Request</button></td>
-            </tr>
-            <tr>
-              <td>Maria</td>
-              <td>Quesada</td>
-              <td>Naranjo</td>
-              <td>1</td>
-              <td>Toyota Corolla 2020</td>
-              <td>$10</td>
-              <td><button type="button">Request</button></td>
-            </tr>
-            <tr>
-              <td>Juan</td>
-              <td>Aguas Zarcas</td>
-              <td>Naranjo</td>
-              <td>1</td>
-              <td>Ford Festiva 1990</td>
-              <td>--</td>
-              <td><button type="button">Request</button></td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+      <p class="ride-path">Rides found from <b><i>Quesada</i></b> to <b><i>Zarcero</i></b></p>
+
+      <table>
+        <tr>
+          <th>Driver</th>
+          <th>From</th>
+          <th>To</th>
+          <th>Seats</th>
+          <th>Car</th>
+          <th>Fee</th>
+          <th>Actions</th>
+        </tr>
+        <tr>
+          <td class="driver">
+            <img
+              src="assets/img/user-icon.png"
+              alt="icon"
+            />
+            barroyo
+          </td>
+          <td><a href="#">Quesada</a></td>
+          <td>Alajuela</td>
+          <td>2</td>
+          <td>Nissan Pathfinder 2015</td>
+          <td>$5</td>
+          <td><a href="#">Request</a></td>
+        </tr>
+        <tr>
+          <td class="driver">
+            <img
+              src="assets/img/user-icon.png"
+              alt="icon"
+            />
+            barroyo
+          </td>
+          <td><a href="#">Quesada</a></td>
+          <td>Naranjo</td>
+          <td>1</td>
+          <td>Toyota Corolla 2020</td>
+          <td>$10</td>
+          <td><a href="#">Request</a></td>
+        </tr>
+        <tr>
+          <td class="driver">
+            <img
+              src="assets/img/user-icon.png"
+              alt="icon"
+            />
+            yluna
+          </td>
+          <td><a href="#">Aguas Zarcas</a></td>
+          <td>Naranjo</td>
+          <td>1</td>
+          <td>Ford Festiva 1990</td>
+          <td>--</td>
+          <td><a href="#">Request</a></td>
+        </tr>
+      </table>
+      <figure>
+        <img class="map-icon"
+          src="assets/img/maps-icon.png"
+          alt="aventones-map"
+        />
+      </figure>
     </main>
 
     <footer>
@@ -123,7 +147,14 @@
           <li><a href="#register">Register</a></li>
         </ul>
       </nav>
-      <p><img src="assets/img/copyright-icon.png" alt="copy-logo" width="14" style="margin-right: 10px;">Aventones.com</p>
+      <p>
+        <img
+          src="assets/img/copyright-icon.png"
+          alt="copy-logo"
+          width="14"
+          style="margin-right: 10px"
+        />Aventones.com
+      </p>
     </footer>
   </body>
 </html>

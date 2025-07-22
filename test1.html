@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rides Finder</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .search-box {
+      border: 1px solid #aaa;
+      padding: 15px;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+
+    .search-box select,
+    .search-box input[type="checkbox"] {
+      margin: 5px;
+    }
+
+    .search-box label {
+      margin-right: 10px;
+    }
+
+    .search-box button {
+      background-color: #337ab7;
+      color: white;
+      padding: 6px 12px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .driver {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .driver img {
+      width: 20px;
+      margin-right: 5px;
+    }
+
+    .muted {
+      color: gray;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="search-box">
+    <label>From 
+      <select>
+        <option>Quesada</option>
+        <option>Aguas Zarcas</option>
+      </select>
+    </label>
+
+    <label>To 
+      <select>
+        <option>Zarcero</option>
+        <option>Naranjo</option>
+      </select>
+    </label>
+
+    <br>
+    Days:
+    <label><input type="checkbox" checked> Mon</label>
+    <label><input type="checkbox" checked> Tue</label>
+    <label><input type="checkbox"> Wed</label>
+    <label><input type="checkbox"> Thu</label>
+    <label><input type="checkbox" checked> Fri</label>
+    <label><input type="checkbox" checked> Sat</label>
+    <label><input type="checkbox"> Sun</label>
+
+    <button>Find rides</button>
+  </div>
+
+  <p>Rides found from <b>Quesada</b> to <i>Zarcero</i></p>
+
+  <table>
+    <tr>
+      <th>Driver</th>
+      <th>From</th>
+      <th>To</th>
+      <th>Seats</th>
+      <th>Car</th>
+      <th>Fee</th>
+      <th>Actions</th>
+    </tr>
+    <tr>
+      <td class="driver"><img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="icon"> barroyo</td>
+      <td><a href="#">Quesada</a></td>
+      <td>Alajuela</td>
+      <td>2</td>
+      <td>Nissan Pathfinder 2015</td>
+      <td>$5</td>
+      <td><a href="#">Request</a></td>
+    </tr>
+    <tr>
+      <td class="driver"><img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="icon"> barroyo</td>
+      <td><a href="#">Quesada</a></td>
+      <td>Naranjo</td>
+      <td>1</td>
+      <td>Toyota Corolla 2020</td>
+      <td>$10</td>
+      <td><a href="#">Request</a></td>
+    </tr>
+    <tr>
+      <td class="driver"><img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="icon"> yluna</td>
+      <td><a href="#">Aguas Zarcas</a></td>
+      <td>Naranjo</td>
+      <td>1</td>
+      <td>Ford Festiva 1990</td>
+      <td class="muted">--</td>
+      <td><a href="#">Request</a></td>
+    </tr>
+  </table>
+
+</body>
+</html>
