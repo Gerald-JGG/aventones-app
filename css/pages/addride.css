@@ -14,7 +14,7 @@
 .new-ride-form {
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 39px;
 }
 
 .new-ride-row {
@@ -26,7 +26,7 @@
 
 .new-ride-input {
   width: 100%;
-  padding: 6px;
+  padding: 8px;
   box-sizing: border-box;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -48,7 +48,6 @@
 
 .new-ride-legend {
   padding: 0 5px;
-  font-weight: bold;
 }
 
 .new-ride-vehicle {
